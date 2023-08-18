@@ -1511,15 +1511,15 @@ export class ChatPortrait {
 						}
 					} else {
 						//@ts-ignore
-						if (tokenDocumentData?.actorData?.img) {
+						if (tokenDocumentData?.actor?.img) {
 							//@ts-ignore
-							imgToken = tokenDocumentData.actorData.img;
+							imgToken = tokenDocumentData.actor.img;
 						}
 
 						if (
 							(!imgToken || ChatPortrait.isWildcardImage(imgToken)) &&
 							//@ts-ignore
-							tokenDocumentData?.actorData?.img
+							tokenDocumentData?.actor?.img
 						) {
 							//@ts-ignore
 							imgToken = tokenDocumentData?.actorData.img;
@@ -2336,7 +2336,7 @@ export class ChatPortrait {
 		if (tokenName && tokenName !== alias) {
 			debug(`replaceSenderWithTokenName | Use token name replaced '${alias}' with '${tokenName}'`);
 			ChatPortrait.replaceMatchingTextNodes(messageSenderElem[0], tokenName, alias);
-		} 
+		}
 		// else {
 		// 	if (actorName !== name) {
 		// 		ChatPortrait.replaceMatchingTextNodes(messageSenderElem[0], actorName, name);
@@ -2770,12 +2770,12 @@ export class ChatPortrait {
 						imgToken = tokenDocumentData?.img;
 					}
 				} else {
-					if (tokenDocumentData?.actorData?.img) {
-						imgToken = tokenDocumentData.actorData.img;
+					if (tokenDocumentData?.actor?.img) {
+						imgToken = tokenDocumentData.actor.img;
 					}
 
-					if ((!imgToken || ChatPortrait.isWildcardImage(imgToken)) && tokenDocumentData?.actorData?.img) {
-						imgToken = tokenDocumentData.actorData.img;
+					if ((!imgToken || ChatPortrait.isWildcardImage(imgToken)) && tokenDocumentData?.actor?.img) {
+						imgToken = tokenDocumentData.actor.img;
 					}
 				}
 				// if((!imgToken || ChatPortrait.isWildcardImage(imgToken)) || imgToken.includes(CONSTANTS.DEF_TOKEN_IMG_NAME)){

@@ -369,7 +369,6 @@ const cleanDist = async () => {
 
     await getFiles(path.resolve(`./dist`));
     for(const file of files) {
-        /* MOD 4535992
         if (file.endsWith(`bundle.js`) ||
             file.endsWith(`.css`) ||
             file.endsWith(`module.json`) ||
@@ -379,7 +378,6 @@ const cleanDist = async () => {
             file.endsWith(`.html`)){
             continue;
         }
-        */
         console.warn(`Cleaning ` + path.relative(process.cwd(), file));
         await fs.promises.unlink(file);
     }
@@ -665,3 +663,4 @@ exports.link = linkUserData;
 exports.package = packageBuild;
 exports.update = updateManifest;
 exports.publish = gulp.series(clean, updateManifest, execBuild, bundleModule, cleanDist, packageBuild);
+exports.publish2 = gulp.series(clean, execBuild, bundleModule, packageBuild);

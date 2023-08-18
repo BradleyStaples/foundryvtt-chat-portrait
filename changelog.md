@@ -1,6 +1,10 @@
-### 0.8.56 
+### 0.9.0
 
-- Update labels 
+- Update to work with Foundry v11
+
+### 0.8.56
+
+- Update labels
 
 ### 0.8.40-41-42-423-44-45
 
@@ -10,17 +14,17 @@
 
 - Synced with "Speaking As" project
 
-### 0.8.38 
+### 0.8.38
 
-- Little css fix on pf2e ?? 
-- Try to Bug fix : https://github.com/p4535992/foundryvtt-chat-portrait/issues/22 
-- Try to Bug fix: https://github.com/p4535992/foundryvtt-chat-portrait/issues/25 
+- Little css fix on pf2e ??
+- Try to Bug fix : https://github.com/p4535992/foundryvtt-chat-portrait/issues/22
+- Try to Bug fix: https://github.com/p4535992/foundryvtt-chat-portrait/issues/25
 
 ### 0.8.37
 
 - Little updates
 
-### 0.8.36 
+### 0.8.36
 
 - Little Pathfinder2e css fix
 
